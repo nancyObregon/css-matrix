@@ -29,12 +29,15 @@
       const w = screen.width;
       const h = screen.height;
 
-      if(){}
-
-
-      console.log({ w });
-      console.log({ h });
-      console.log(`area : ${w * h}`);
+      window.addEventListener("orientationchange", function (event) {
+        /* update layout per new orientation */
+        alert(
+          "the orientation of the device is now " + screen.orientation.angle
+        );
+        if (w < h) {
+          document.body.style.backgroundImage = "url('./img/asuka.jpg')";
+        }
+      });
     </script>
   </body>
 </html>
