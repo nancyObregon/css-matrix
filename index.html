@@ -8,6 +8,33 @@
     <title>Static Template</title>
   </head>
   <body>
-    <div id="background" class="container-fluid"></div>
+    <div class="container-fluid">
+      <div class="cuadrado"></div>
+    </div>
+    <script>
+      const numeroDeMensajes = 100;
+
+      function area(base, altura) {
+        return base * altura;
+      }
+
+      function superficieDelMensaje(area, mensajes) {
+        return area / mensajes;
+      }
+
+      function obtenerMedidasMensaje(superficie) {
+        return Math.sqrt(superficie);
+      }
+
+      const w = screen.width;
+      const h = screen.height;
+
+      if(){}
+
+
+      console.log({ w });
+      console.log({ h });
+      console.log(`area : ${w * h}`);
+    </script>
   </body>
 </html>

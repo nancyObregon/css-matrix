@@ -1,15 +1,23 @@
 body {
+  margin: 0;
   background-repeat: no-repeat;
-  height: 100vh;
-  background-image: url("https://pbs.twimg.com/media/C4qaeE3UkAEDhP1.jpg");
+  background: url("./img/mural.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-#background {
-  position: relative;
-  top: -7px;
+/* #background {
+  margin: 0;
   height: 100vh;
   background-size: 40px 40px;
   background-image: linear-gradient(to right, white 1px, transparent 1px),
     linear-gradient(to bottom, white 1px, transparent 1px);
-  left: -8px;
+} */
+
+.cuadrado {
+  width: 100px;
+  height: 100px;
+  background: #428bca;
 }
